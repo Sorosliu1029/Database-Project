@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0486798-2CBB-44AD-9494-FA8F7CD6D98F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookSaleManagement</RootNamespace>
+    <AssemblyName>BookSaleManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon_big.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CDataBase.cs" />
+    <Compile Include="CPublic.cs" />
+    <Compile Include="FrmAddNewBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddNewBook.Designer.cs">
+      <DependentUpon>FrmAddNewBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminMain.Designer.cs">
+      <DependentUpon>FrmAdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBook.Designer.cs">
+      <DependentUpon>FrmBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBookCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBookCity.Designer.cs">
+      <DependentUpon>FrmBookCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompleteAdminInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompleteAdminInfo.Designer.cs">
+      <DependentUpon>FrmCompleteAdminInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompleteCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompleteCustomerInfo.Designer.cs">
+      <DependentUpon>FrmCompleteCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCstRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCstRegister.Designer.cs">
+      <DependentUpon>FrmCstRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustomerMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustomerMain.Designer.cs">
+      <DependentUpon>FrmCustomerMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDataBase.Designer.cs">
+      <DependentUpon>FrmDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFinance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFinance.Designer.cs">
+      <DependentUpon>FrmFinance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHelp.Designer.cs">
+      <DependentUpon>FrmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInfoAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInfoAdmin.Designer.cs">
+      <DependentUpon>FrmInfoAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInfoCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInfoCustomer.Designer.cs">
+      <DependentUpon>FrmInfoCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrder.Designer.cs">
+      <DependentUpon>FrmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPassword.Designer.cs">
+      <DependentUpon>FrmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStock.Designer.cs">
+      <DependentUpon>FrmStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUser.Designer.cs">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWarehouse.Designer.cs">
+      <DependentUpon>FrmWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAddNewBook.resx">
+      <DependentUpon>FrmAddNewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminMain.resx">
+      <DependentUpon>FrmAdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBook.resx">
+      <DependentUpon>FrmBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBookCity.resx">
+      <DependentUpon>FrmBookCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompleteAdminInfo.resx">
+      <DependentUpon>FrmCompleteAdminInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompleteCustomerInfo.resx">
+      <DependentUpon>FrmCompleteCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCstRegister.resx">
+      <DependentUpon>FrmCstRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustomerMain.resx">
+      <DependentUpon>FrmCustomerMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDataBase.resx">
+      <DependentUpon>FrmDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFinance.resx">
+      <DependentUpon>FrmFinance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHelp.resx">
+      <DependentUpon>FrmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInfoAdmin.resx">
+      <DependentUpon>FrmInfoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInfoCustomer.resx">
+      <DependentUpon>FrmInfoCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrder.resx">
+      <DependentUpon>FrmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPassword.resx">
+      <DependentUpon>FrmPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStock.resx">
+      <DependentUpon>FrmStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUser.resx">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWarehouse.resx">
+      <DependentUpon>FrmWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon_big.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
